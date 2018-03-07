@@ -87,5 +87,5 @@ If the code is helpful for your research, please consider citing our paper.
 &nbsp;&nbsp;&nbsp;&nbsp;  author={Jin, Yueming and Dou, Qi and Chen, Hao and Yu, Lequan and Qin, Jing and Fu, Chi-Wing and Heng, Pheng-Ann}, 
 &nbsp;&nbsp;&nbsp;&nbsp;  journal={IEEE Transactions on Medical Imaging},    
 &nbsp;&nbsp;&nbsp;&nbsp;  year={2017},    
-&nbsp;&nbsp;&nbsp;&nbsp;  year  = {2018}    
+&nbsp;&nbsp;&nbsp;&nbsp;  publisher={IEEE}    
 }
