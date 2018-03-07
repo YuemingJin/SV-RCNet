@@ -37,10 +37,10 @@ Most related codes are in `surgicalVideo/` folder.
 
 - Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps for Cholec80 and only split video01 as an example.
 
-```shell
-cd surgicalVideo
-sh split_video_to_image.sh 
-```
+  ```shell
+  cd surgicalVideo
+  sh split_video_to_image.sh 
+  ```
     
 - Resize the image from 1920 x 1080 to 250 x 250.
 
@@ -67,6 +67,6 @@ Put it in `models/ResNet-50/`.
 
    Enter `test/` folder to inference all the testing videos. Need to change paths in `test.py`.
 
-```shell
-python test.py
-```
+   ```shell
+   python test.py
+   ```
