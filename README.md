@@ -83,7 +83,7 @@ If the code is helpful for your research, please consider citing our paper.
 }
 
 @article{jin2017sv,  
-&nbsp;&nbsp;&nbsp;&nbsp;  author = {Hu, Xiaowei and Zhu, Lei and Fu, Chi-Wing and Qin, Jing and Heng, Pheng-Ann},    
+&nbsp;&nbsp;&nbsp;&nbsp;  title={SV-RCNet: Workflow Recognition from Surgical Videos using Recurrent Convolutional Network},    
 &nbsp;&nbsp;&nbsp;&nbsp;  title = {Direction-aware Spatial Context Features for Shadow Detection},    
 &nbsp;&nbsp;&nbsp;&nbsp;  booktitle = {CVPR},    
 &nbsp;&nbsp;&nbsp;&nbsp;  year  = {2018}    
