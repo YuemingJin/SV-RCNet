@@ -1,0 +1,15 @@
+net: "ResNet-50-workflow-train-val.prototxt"
+base_lr: 0.0005
+lr_policy: "step"
+stepsize: 20000
+test_iter: 100 
+test_interval: 500
+gamma: 0.1
+display: 100
+max_iter: 240000
+momentum: 0.9
+weight_decay: 0.005  
+snapshot: 10000
+snapshot_prefix: "./snapshot/resnet_workflow"
+solver_mode: GPU
+device_id: 1
