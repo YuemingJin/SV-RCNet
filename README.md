@@ -36,10 +36,12 @@ Cholec80 dataset or M2CAI dataset
 2. Preprocess data
 
 Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps for Cholec80 and only split video01 as an example.
+
     ```shell
     cd surgicalVideo
     sh split_video_to_image.sh 
     ```
+    
 Resize the image from 1920 x 1080 to 250 x 250.
 
 *Note: may need to modify the ground truth file (gt_file_Cholec80) according to the name of images you created.*
@@ -64,6 +66,7 @@ Put it in `models/ResNet-50/`.
 4. Testing
 
 Enter `test/` folder to inference all the testing videos. Need to change paths in `test.py`.
+
     ```shell
     python test.py
     ```
