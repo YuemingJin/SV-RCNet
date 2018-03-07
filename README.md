@@ -31,7 +31,7 @@ Most related codes are in `surgicalVideo/` folder.
 
 1. Download data
 
-Cholec80 dataset or M2CAI dataset
+   Cholec80 dataset or M2CAI dataset
 
 2. Preprocess data
 
@@ -65,8 +65,8 @@ Put it in `models/ResNet-50/`.
 
 4. Testing
 
-Enter `test/` folder to inference all the testing videos. Need to change paths in `test.py`.
+   Enter `test/` folder to inference all the testing videos. Need to change paths in `test.py`.
 
-    ```shell
-    python test.py
-    ```
+```shell
+python test.py
+```
