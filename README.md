@@ -33,18 +33,18 @@ Most related codes are in `surgicalVideo/` folder.
 
 Cholec80 dataset or M2CAI dataset
 
-1. Preprocess data
+2. Preprocess data
 
 Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps for Cholec80 and only split video01 as an example.
-
     ```shell
     cd surgicalVideo
     sh split_video_to_image.sh 
     ```
-    
+Resize the image from 1920 x 1080 to 250 x 250.
+
 *Note: may need to modify the ground truth file (gt_file_Cholec80) according to the name of images you created.*
 
-2. Training the network
+3. Training the network
 
 - Download pre-trained ResNet-50 model at https://github.com/KaimingHe/deep-residual-networks.
 Put it in `models/ResNet-50/`.
@@ -54,8 +54,16 @@ Put it in `models/ResNet-50/`.
     sh train_ResNet_50.sh 
     ```
 - The trained ResNet-50 will be saved in `snapshot/` folder. Please choose and copy the model to the `models/SV-RCNet/` folder as the next step pre-trained model when the loss does not decrease.
+- Enter `python/` folder and modify paths in `set_input_layer.py`
 - Enter `models/SV-RCNet` and modify pre-trained model name in `train_SVRCNet.sh`.
 - Train SV-RCNet
     ```shell
     sh train_SVRCNet.sh
+    ```
+
+4. Testing
+
+Enter `test/` folder to inference all the testing videos. Need to change paths in `test.py`.
+    ```shell
+    python test.py
     ```
