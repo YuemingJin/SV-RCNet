@@ -33,8 +33,8 @@ Most related codes are in 'surgicalVideo/' folder.
 Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps.
     ```shell
     cd surgicalVideo
-    sh split_video_to_image.sh
-    # only split video01 as an example
+    sh split_video_to_image.sh #only split video01 as an example
     ```
 *Note: may need to modify the ground truth file (gt_file_Cholec80) according to the name of images you created.*
+
 2. Training the network
