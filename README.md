@@ -29,8 +29,13 @@ The implementation is based on Ubuntu 14.04, CUDA 8.0, cuDNN 5.0, Anaconda 2.7 a
 ## Step by Step Recognition
 Most related codes are in 'surgicalVideo/' folder.
 
+1. Download data
+
+Cholec80 dataset or M2CAI dataset
+
 1. Preprocess data
-Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps and only split video01 as an example.
+
+Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps for Cholec80 and only split video01 as an example.
     ```shell
     cd surgicalVideo
     sh split_video_to_image.sh 
@@ -38,3 +43,17 @@ Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split
 *Note: may need to modify the ground truth file (gt_file_Cholec80) according to the name of images you created.*
 
 2. Training the network
+
+- Download pre-trained ResNet-50 model at https://github.com/KaimingHe/deep-residual-networks.
+Put it in 'models/ResNet-50/'.
+- Enter 'models/ResNet-50' and modify path in 'ResNet-50-workflow-train-val.prototxt' and pre-trained model name in 'train_ResNet_50.sh'.
+- Train ResNet-50
+    ```shell
+    sh train_ResNet_50.sh 
+    ```
+- The trained ResNet-50 will be saved in 'snapshot/' folder. Please choose and copy the model to the 'models/SV-RCNet/' folder as the next step pre-trained model when the loss does not decrease.
+- Enter 'models/SV-RCNet' and modify pre-trained model name in 'train_SVRCNet.sh'.
+- Train SV-RCNet
+    ```shell
+    sh train_SVRCNet.sh
+    ```
