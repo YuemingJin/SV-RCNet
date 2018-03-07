@@ -30,12 +30,11 @@ The implementation is based on Ubuntu 14.04, CUDA 8.0, cuDNN 5.0, Anaconda 2.7 a
 Most related codes are in 'surgicalVideo/' folder.
 
 1. Preprocess data
-Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps.
+Download [ffmpeg](https://www.johnvansickle.com/ffmpeg/) and use ffmpeg to split the videos to image. We split the videos in 1 fps and only split video01 as an example.
     ```shell
     cd surgicalVideo
-    sh split_video_to_image.sh #only split video01 as an example
-    ```
-
+    sh split_video_to_image.sh 
+    ```
 *Note: may need to modify the ground truth file (gt_file_Cholec80) according to the name of images you created.*
 
 2. Training the network
