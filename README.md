@@ -1,12 +1,12 @@
 # SV-RCNet
-SV-RCNet: Workflow Recognition from Surgical Videos using Recurrent Convolutional Network (TMI 2018)
-
-by Yueming Jin, Qi Dou, Hao Chen, Lequan Yu, Chi-Wing Fu, Jing Qin and Pheng Ann Heng
+[SV-RCNet: Workflow Recognition from Surgical Videos using Recurrent Convolutional Network](https://ieeexplore.ieee.org/abstract/document/8240734) (TMI 2018)
 
 ## Introduction
 The SV-RCNet repository contains the codes used in 2016 M2CAI workflow challenge and our SV-RCNet paper. Our method ranks the first in the [M2CAI challenge](http://camma.u-strasbg.fr/m2cai2016/index.php/workflow-challenge-results/) and achieves a promising performance in one large surgical dataset, i.e., Cholec80 dataset.
 
-The implementation is based on Ubuntu 14.04, CUDA 8.0, cuDNN 5.0, Anaconda 2.7 and Caffe.
+The implementation is based on **Caffe** with Ubuntu 14.04, CUDA 8.0, cuDNN 5.0, Anaconda 2.7.
+<br/>
+**New Pytorch implementation of this work is available. Please refer to 'train_singlenet_phase.py' in [MTRCNet-CL](https://github.com/YuemingJin/MTRCNet-CL/blob/master/train_singlenet_phase.py) repository.**
 
 ## Installation
 1. Clone the SV-RCNet repository
