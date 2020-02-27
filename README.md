@@ -1,5 +1,5 @@
 # SV-RCNet
-SV-RCNet: Workflow Recognition from Surgical Videos using Recurrent Convolutional Network (TMI 2017)
+SV-RCNet: Workflow Recognition from Surgical Videos using Recurrent Convolutional Network (TMI 2018)
 
 by Yueming Jin, Qi Dou, Hao Chen, Lequan Yu, Chi-Wing Fu, Jing Qin and Pheng Ann Heng
 
